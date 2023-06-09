@@ -12,14 +12,14 @@ const tourSchema = mongoose.Schema({
     default: new Date(),
   },
 
-  likeCount: {
-    type: Number,
-    default: 0,
-  },
-  // likes: {
-  //   type: [String],
-  //   default: [],
+  // likeCount: {
+  //   type: Number,
+  //   default: 0,
   // },
+  likes: {
+    type: [String],
+    default: [],
+  },
 });
 
 const TourModal = mongoose.model("Tour", tourSchema);
